@@ -1,0 +1,51 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 16rem;
+  height: 16rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.name {
+  margin-top: 6rem;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #ffa200aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 40s linear;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    font-size: 0.6rem;
+  }
+
+  .logo {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .name {
+    margin-top: 4rem;
+  }
+}
